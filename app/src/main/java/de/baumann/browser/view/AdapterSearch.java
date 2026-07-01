@@ -108,7 +108,7 @@ public class AdapterSearch extends BaseAdapter implements Filterable {
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
         int color = typedValue.data;
-        holder.albumCardView.setCardBackgroundColor(color);
+        holder.albumCardView.setBackgroundColor(color);
 
         try(FaviconHelper faviconHelper = new FaviconHelper(context)) {
             Bitmap bitmap = faviconHelper.getFavicon(item.url);

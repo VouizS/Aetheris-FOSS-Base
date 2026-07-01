@@ -40,9 +40,9 @@ public class AdapterSettingsMenu extends RecyclerView.Adapter<AdapterSettingsMen
         holder.checkBox.setChecked(item.isSelected());
 
         if (item.isSelected()) {
-            holder.cardView.setCardBackgroundColor(Color.parseColor("#E3F2FD")); // Sanftes Blau
+            holder.itemView.setBackgroundColor(Color.parseColor("#E3F2FD")); // Sanftes Blau
         } else {
-            holder.cardView.setCardBackgroundColor(Color.WHITE);
+            holder.itemView.setBackgroundColor(Color.WHITE);
         }
 
         holder.itemView.setOnClickListener(v -> {
