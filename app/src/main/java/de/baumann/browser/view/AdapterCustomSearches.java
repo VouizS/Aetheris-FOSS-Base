@@ -1,6 +1,5 @@
 package de.baumann.browser.view;
 
-import android.content.res.ColorStateList;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
@@ -63,7 +62,7 @@ public class AdapterCustomSearches extends RecyclerView.Adapter<RedirectsViewHol
         context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
         int color = typedValue.data;
         CardView albumCardView = holder.itemView.findViewById(R.id.item_CardViewItem);
-        albumCardView.setCardBackgroundColor(ColorStateList.valueOf(color));
+        albumCardView.setBackgroundColor(color);
         CardView cardView = holder.itemView.findViewById(R.id.item_cardView);
         cardView.setVisibility(GONE);
 

@@ -1,6 +1,5 @@
 package de.baumann.browser.view;
 
-import android.content.res.ColorStateList;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
@@ -79,10 +78,10 @@ public class AdapterTabs {
         context.getTheme().resolveAttribute(R.attr.colorPrimaryInverse, typedValue, true);
         int color = typedValue.data;
         context.getTheme().resolveAttribute(R.attr.colorSurface, typedValue, true);
-        albumCardView.setCardBackgroundColor(ColorStateList.valueOf(color));
+        albumCardView.setBackgroundColor(color);
         albumTitle.setTypeface(null, Typeface.BOLD);
         albumView.setOnClickListener(view -> {
-            albumCardView.setCardBackgroundColor(ColorStateList.valueOf(color));
+            albumCardView.setBackgroundColor(color);
             browserController.hideOverview();
         });
     }
@@ -91,7 +90,7 @@ public class AdapterTabs {
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
         int color = typedValue.data;
-        albumCardView.setCardBackgroundColor(ColorStateList.valueOf(color));
+        albumCardView.setBackgroundColor(color);
         albumTitle.setTypeface(null, Typeface.NORMAL);
         albumView.setOnClickListener(view -> {
             browserController.showAlbum(albumController);

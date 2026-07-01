@@ -1,6 +1,5 @@
 package de.baumann.browser.view;
 
-import android.content.res.ColorStateList;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.TypedValue;
@@ -14,7 +13,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 
-import com.google.android.material.card.MaterialCardView;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -77,32 +75,32 @@ public class AdapterRecord extends ArrayAdapter<Record> {
         holder.time.setText(text);
 
         if (filter == 11) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.red, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
         } else if (filter == 10) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.pink, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
         } else if (filter == 9) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.purple, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
         } else if (filter == 8) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.blue, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
         } else if (filter == 7) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.teal, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
         } else if (filter == 6) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.green, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
         } else if (filter == 5) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.lime, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
         } else if (filter == 4) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
         } else if (filter == 3) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.orange, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
         } else if (filter == 2) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.brown, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
         } else if (filter == 1) {
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(ResourcesCompat.getColor(context.getResources(), R.color.grey, null)));
+            holder.cardView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
         } else {
             TypedValue typedValue = new TypedValue();
             context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
             int color = typedValue.data;
-            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(color));
+            holder.cardView.setBackgroundColor(color);
         }
 
         try(FaviconHelper faviconHelper = new FaviconHelper(context)) {
