@@ -104,7 +104,7 @@ public class AdapterRecord extends ArrayAdapter<Record> {
             holder.cardView.setCardBackgroundColor(color);
         }
 
-        try (FaviconHelper faviconHelper = new FaviconHelper(context)) {
+        try(FaviconHelper faviconHelper = new FaviconHelper(context)) {
             Bitmap bitmap = faviconHelper.getFavicon(record.getURL());
             if (bitmap != null) {
                 holder.favicon.setImageBitmap(bitmap);
