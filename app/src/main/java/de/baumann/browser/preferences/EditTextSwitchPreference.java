@@ -64,43 +64,43 @@ public class EditTextSwitchPreference extends EditTextPreference {
         if ((EditTextSwitchKey != null)) {
             switch (EditTextSwitchKey) {
                 case "filter_01":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
                     break;
                 case "filter_02":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
                     break;
                 case "filter_03":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
                     break;
                 case "filter_04":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
                     break;
                 case "filter_05":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
                     break;
                 case "filter_06":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
                     break;
                 case "filter_07":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
                     break;
                 case "filter_08":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
                     break;
                 case "filter_09":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
                     break;
                 case "filter_10":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
                     break;
                 case "filter_11":
-                    holder.itemView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
+                    rootView.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
                     break;
                 case "filter_12":
                     TypedValue typedValue = new TypedValue();
                     context.getTheme().resolveAttribute(R.attr.colorSurfaceVariant, typedValue, true);
                     int color = typedValue.data;
-                    holder.itemView.setBackgroundColor(color);
+                    rootView.setBackgroundColor(color);
                     break;
             }
         }

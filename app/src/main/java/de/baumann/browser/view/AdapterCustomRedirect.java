@@ -1,5 +1,6 @@
 package de.baumann.browser.view;
 
+import android.content.res.ColorStateList;
 import static android.view.View.VISIBLE;
 
 import android.content.Context;
@@ -63,7 +64,7 @@ public class AdapterCustomRedirect extends RecyclerView.Adapter<RedirectsViewHol
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
         int color = typedValue.data;
-        albumCardView.setCardBackgroundColor(color);
+        albumCardView.setCardBackgroundColor(ColorStateList.valueOf(color));
 
         CheckBox checkbox_redirect = holder.itemView.findViewById(R.id.item_checkBox);
         checkbox_redirect.setChecked(sp.getBoolean(current.getSource(), true));

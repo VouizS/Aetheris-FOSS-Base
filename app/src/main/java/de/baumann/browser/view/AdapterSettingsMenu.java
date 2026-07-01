@@ -1,5 +1,6 @@
 package de.baumann.browser.view;
 
+import android.content.res.ColorStateList;
 import static android.view.View.GONE;
 
 import android.graphics.Color;
@@ -40,9 +41,9 @@ public class AdapterSettingsMenu extends RecyclerView.Adapter<AdapterSettingsMen
         holder.checkBox.setChecked(item.isSelected());
 
         if (item.isSelected()) {
-            holder.cardView.setCardBackgroundColor(Color.parseColor("#E3F2FD")); // Sanftes Blau
+            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(Color.parseColor("#E3F2FD"))); // Sanftes Blau
         } else {
-            holder.cardView.setCardBackgroundColor(Color.WHITE);
+            holder.cardView.setCardBackgroundColor(ColorStateList.valueOf(Color.WHITE));
         }
 
         holder.itemView.setOnClickListener(v -> {
