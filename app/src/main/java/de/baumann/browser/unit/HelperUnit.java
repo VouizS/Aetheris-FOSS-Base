@@ -317,22 +317,22 @@ public class HelperUnit {
 
     public static void setFilterIcons(Context context, MaterialCardView ib_icon, long newIcon) {
         newIcon = newIcon & 15;
-        if (newIcon == 11) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
-        else if (newIcon == 10) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
-        else if (newIcon == 9) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
-        else if (newIcon == 8) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
-        else if (newIcon == 7) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
-        else if (newIcon == 6) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
-        else if (newIcon == 5) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
-        else if (newIcon == 4) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
-        else if (newIcon == 3) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
-        else if (newIcon == 2) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
-        else if (newIcon == 1) ib_icon.setBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
+        if (newIcon == 11) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
+        else if (newIcon == 10) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
+        else if (newIcon == 9) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
+        else if (newIcon == 8) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
+        else if (newIcon == 7) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
+        else if (newIcon == 6) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
+        else if (newIcon == 5) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
+        else if (newIcon == 4) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
+        else if (newIcon == 3) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
+        else if (newIcon == 2) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
+        else if (newIcon == 1) ib_icon.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
         else if (newIcon == 0) {
             TypedValue typedValue = new TypedValue();
             context.getTheme().resolveAttribute(R.attr.colorSecondaryContainer, typedValue, true);
             int color = typedValue.data;
-            ib_icon.setBackgroundColor(color);
+            ib_icon.setCardBackgroundColor(color);
         }
     }
 

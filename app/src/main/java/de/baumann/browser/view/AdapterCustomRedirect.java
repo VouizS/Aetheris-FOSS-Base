@@ -63,7 +63,7 @@ public class AdapterCustomRedirect extends RecyclerView.Adapter<RedirectsViewHol
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
         int color = typedValue.data;
-        albumCardView.setBackgroundColor(color);
+        albumCardView.setCardBackgroundColor(color);
 
         CheckBox checkbox_redirect = holder.itemView.findViewById(R.id.item_checkBox);
         checkbox_redirect.setChecked(sp.getBoolean(current.getSource(), true));
