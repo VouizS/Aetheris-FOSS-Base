@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 
+import com.google.android.material.card.MaterialCardView;
+
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
@@ -31,6 +33,7 @@ public class AdapterRecord extends ArrayAdapter<Record> {
         TextView title;
         TextView time;
         ImageView favicon;
+        MaterialCardView cardView;
     }
 
     public AdapterRecord(Context context, List<Record> list) {
@@ -52,6 +55,7 @@ public class AdapterRecord extends ArrayAdapter<Record> {
             holder.title = view.findViewById(R.id.titleView);
             holder.time = view.findViewById(R.id.dateView);
             holder.favicon = view.findViewById(R.id.item_icon);
+            holder.cardView = view.findViewById(R.id.item_CardViewItem);
             view.setTag(holder);
         } else {
             holder = (Holder) view.getTag();
@@ -72,23 +76,35 @@ public class AdapterRecord extends ArrayAdapter<Record> {
         holder.time.setText(text);
 
         if (filter == 11) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.red, null));
         } else if (filter == 10) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.pink, null));
         } else if (filter == 9) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.purple, null));
         } else if (filter == 8) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.blue, null));
         } else if (filter == 7) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.teal, null));
         } else if (filter == 6) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.green, null));
         } else if (filter == 5) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.lime, null));
         } else if (filter == 4) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.yellow, null));
         } else if (filter == 3) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.orange, null));
         } else if (filter == 2) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.brown, null));
         } else if (filter == 1) {
+            holder.cardView.setCardBackgroundColor(ResourcesCompat.getColor(context.getResources(), R.color.grey, null));
         } else {
             TypedValue typedValue = new TypedValue();
             context.getTheme().resolveAttribute(R.attr.colorSurfaceContainerHighest, typedValue, true);
             int color = typedValue.data;
+            holder.cardView.setCardBackgroundColor(color);
         }
 
-        try(FaviconHelper faviconHelper = new FaviconHelper(context)) {
+        try (FaviconHelper faviconHelper = new FaviconHelper(context)) {
             Bitmap bitmap = faviconHelper.getFavicon(record.getURL());
             if (bitmap != null) {
                 holder.favicon.setImageBitmap(bitmap);
