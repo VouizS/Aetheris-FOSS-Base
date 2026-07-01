@@ -36,6 +36,16 @@
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+    
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Aetheris.M3.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Aetheris.M3.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Aetheris.M3.Large</item>
+        <item name="materialCardViewStyle">@style/Widget.Aetheris.M3.MaterialCardView</item>
+        <item name="colorControlNormal">@color/m3_on_surface_variant</item>
+        <item name="colorControlActivated">@color/m3_primary</item>
+        <item name="android:colorAccent">@color/m3_primary</item>
+        <item name="colorAccent">@color/m3_primary</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
 
 </resources>

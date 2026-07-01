@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="m3_corner_extra_small">4dp</dimen>
+    <dimen name="m3_corner_small">8dp</dimen>
+    <dimen name="m3_corner_medium">12dp</dimen>
+    <dimen name="m3_corner_large">16dp</dimen>
+    <dimen name="m3_corner_extra_large">28dp</dimen>
+    <dimen name="m3_card_corner_radius">24dp</dimen>
+    <dimen name="m3_menu_corner_radius">28dp</dimen>
+    <dimen name="m3_nav_corner_radius">24dp</dimen>
+    <dimen name="m3_fab_size">56dp</dimen>
+    <dimen name="m3_touch_target">48dp</dimen>
+    <dimen name="m3_spacing_small">8dp</dimen>
+    <dimen name="m3_spacing_medium">16dp</dimen>
+    <dimen name="m3_spacing_large">24dp</dimen>
+</resources>

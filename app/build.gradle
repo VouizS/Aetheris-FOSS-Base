@@ -12,8 +12,8 @@ android {
         applicationId "com.aetheris.browser.fossbase"
         minSdkVersion 26
         targetSdkVersion 35
-        versionCode 3
-        versionName "0.2.1-m3skin"
+        versionCode 4
+        versionName "0.2.2-m3polish"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
     }
