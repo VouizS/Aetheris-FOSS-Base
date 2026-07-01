@@ -11,4 +11,10 @@
     <color name="orange">#FF9800</color>
     <color name="brown">#795548</color>
     <color name="grey">#9E9E9E</color>
+    <color name="aetheris_bg">#050B18</color>
+    <color name="aetheris_surface">#0B1224</color>
+    <color name="aetheris_primary">#35D8FF</color>
+    <color name="aetheris_secondary">#7C4DFF</color>
+    <color name="aetheris_accent">#00E5FF</color>
+    <color name="aetheris_text">#EAF7FF</color>
 </resources>
