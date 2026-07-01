@@ -1,5 +1,7 @@
 package de.baumann.browser.activity;
 
+
+import android.content.res.ColorStateList;
 import static android.content.ContentValues.TAG;
 import static android.os.Build.VERSION.SDK_INT;
 import static android.view.View.GONE;

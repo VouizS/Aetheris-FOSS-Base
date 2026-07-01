@@ -32,7 +32,7 @@ public class AdapterRecord extends ArrayAdapter<Record> {
         TextView title;
         TextView time;
         ImageView favicon;
-        MaterialCardView cardView;
+        View cardView;
     }
 
     public AdapterRecord(Context context, List<Record> list) {

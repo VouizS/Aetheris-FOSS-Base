@@ -99,7 +99,7 @@ public class GridAdapter extends BaseAdapter {
 
     private static class Holder {
         TextView title;
-        CardView cardView;
+        View cardView;
         ImageView iconMenu;
     }
 }
