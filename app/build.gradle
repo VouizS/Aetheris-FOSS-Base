@@ -12,8 +12,8 @@ android {
         applicationId "com.aetheris.browser.fossbase"
         minSdkVersion 26
         targetSdkVersion 35
-        versionCode 7
-        versionName "0.2.3-m3icon-r1"
+        versionCode 9
+        versionName "0.3.0-uniqueui"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
     }

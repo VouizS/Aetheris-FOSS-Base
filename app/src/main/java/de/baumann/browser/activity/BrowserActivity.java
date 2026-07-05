@@ -249,6 +249,7 @@ public class BrowserActivity extends AppCompatActivity implements BrowserControl
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        de.baumann.browser.unit.AetherisUiIdentity.apply(this);
         contentFrame = findViewById(R.id.main_content);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

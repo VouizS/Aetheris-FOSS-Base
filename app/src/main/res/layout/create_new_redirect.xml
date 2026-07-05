@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="20dp">
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/aetheris_screen_background">
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

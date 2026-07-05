@@ -1,6 +1,7 @@
 <resources>
 
     <style name="AppTheme_wallpaper" parent="Theme.Material3.DynamicColors.DayNight">
+        <item name="colorPrimaryDark">@color/aetheris_void</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -15,7 +16,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/m3_primary</item>
+        <item name="colorPrimary">@color/aetheris_nebula</item>
         <item name="colorOnPrimary">@color/m3_on_primary</item>
         <item name="colorPrimaryContainer">@color/m3_primary_container</item>
         <item name="colorOnPrimaryContainer">@color/m3_on_primary_container</item>
@@ -35,15 +36,15 @@
         <item name="colorErrorContainer">@color/m3_error_container</item>
         <item name="colorOnErrorContainer">@color/m3_on_error_container</item>
 
-        <item name="android:windowBackground">@color/m3_background</item>
+        <item name="android:windowBackground">@color/aetheris_void</item>
         <item name="colorSurface">@color/m3_surface</item>
         <item name="colorOnSurface">@color/m3_on_surface</item>
         <item name="colorSurfaceVariant">@color/m3_surface_variant</item>
         <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant</item>
         <item name="colorOutline">@color/m3_outline</item>
 
-        <item name="android:statusBarColor">@color/m3_surface</item>
-        <item name="android:navigationBarColor">@color/m3_surface</item>
+        <item name="android:statusBarColor">@color/aetheris_void</item>
+        <item name="android:navigationBarColor">@color/aetheris_deep</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
 
@@ -51,10 +52,10 @@
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <item name="colorControlNormal">@color/m3_on_surface_variant</item>
-        <item name="colorControlActivated">@color/m3_primary</item>
+        <item name="colorControlNormal">@color/aetheris_text_soft</item>
+        <item name="colorControlActivated">@color/aetheris_orbit</item>
         <item name="android:colorAccent">@color/m3_primary</item>
-        <item name="colorAccent">@color/m3_primary</item>
+        <item name="colorAccent">@color/aetheris_orbit</item>
     </style>
 
 </resources>

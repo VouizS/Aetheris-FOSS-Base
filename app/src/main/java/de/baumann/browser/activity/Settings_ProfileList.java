@@ -47,6 +47,7 @@ public class Settings_ProfileList extends AppCompatActivity {
         HelperUnit.initTheme(this);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_settings_profile_list);
+        de.baumann.browser.unit.AetherisUiIdentity.apply(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);

@@ -24,6 +24,7 @@ public class Settings_Activity extends AppCompatActivity {
         HelperUnit.initTheme(this);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_settings);
+        de.baumann.browser.unit.AetherisUiIdentity.apply(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
